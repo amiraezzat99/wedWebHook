@@ -44,10 +44,10 @@ const orderSchema = new mongoose.Schema(
         'deliverd',
         'canclled',
         'rejected',
+        'payment failed',
       ],
     },
     reason: String,
-
   },
   {
     timestamps: true,
