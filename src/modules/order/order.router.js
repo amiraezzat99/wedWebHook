@@ -2,7 +2,7 @@ import { Router } from 'express'
 import auth from '../../middleware/auth.js'
 import { validation } from '../../middleware/validation.js'
 import { asyncHandler } from '../../utils/errorHandling.js'
-import { createOrder } from './order.controller.js'
+import { createOrder, webHook } from './order.controller.js'
 const router = Router()
 
 import express from 'express'

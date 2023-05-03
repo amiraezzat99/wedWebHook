@@ -6,19 +6,8 @@ import { globalResponse } from './errorHandling.js'
 import cors from 'cors'
 const initApp = (app, express) => {
   const port = process.env.PORT || 5000
-  // two sever
   var whitelist = ['http://example1.com', 'http://example2.com']
-  //   var corsOptions = {
-  //     origin: function (origin, callback) {
-  //       if (whitelist.indexOf(origin) !== -1) {
-  //         callback(null, true)
-  //       } else {
-  //         callback(new Error('Not allowed by CORS'))
-  //       }
-  //     },
-  //   }
-  //   app.use(cors(corsOptions))
-  //convert Buffer Data
+ 
   // app.use(express.json({}))
   app.use((req, res, next) => {
     if (req.originalUrl == '/order/webhook') {

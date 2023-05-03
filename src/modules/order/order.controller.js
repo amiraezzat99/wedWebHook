@@ -181,8 +181,7 @@ export const createOrder = async (req, res, next) => {
   }
 }
 
-//======================= web hoook =========================
-//======================= web hoook =========================
+//======================= web hook =========================
 export const webHook = async (req, res, next) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
