@@ -8,7 +8,7 @@ import sendEmail from '../../utils/sendEmail.js'
 import { payment } from '../../utils/payment.js'
 import Stripe from 'stripe'
 
-// create order
+// create order API
 export const createOrder = async (req, res, next) => {
   const userId = req.user._id
   const { products, address, phone, couponCode, paymentMethod } = req.body
